@@ -1,0 +1,11 @@
+﻿  stdafx.cpp
+  ClientDlg.cpp
+  ClientCon.cpp
+c:\users\id student\desktop\luke l\code\calden\v_2\client\client\clientcon.cpp(46): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1850): note: see declaration of 'inet_addr'
+c:\users\id student\desktop\luke l\code\calden\v_2\client\client\clientcon.cpp(24): warning C4101: 'message': unreferenced local variable
+  Client.cpp
+  Generating Code...
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  Client.vcxproj -> C:\Users\iD Student\Desktop\Luke L\Code\Calden\V_2\Client\Debug\Client.exe
+  Client.vcxproj -> C:\Users\iD Student\Desktop\Luke L\Code\Calden\V_2\Client\Debug\Client.pdb (Full PDB)

@@ -1,0 +1,5 @@
+﻿  Server.cpp
+c:\users\id student\desktop\luke l\code\calden\v_1\calden server\calden server\server.cpp(100): warning C4996: 'asctime': This function or variable may be unsafe. Consider using asctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\time.h(116): note: see declaration of 'asctime'
+  Calden Server.vcxproj -> C:\Users\iD Student\Desktop\Luke L\Code\Calden\V_1\Calden Server\Debug\Calden Server.exe
+  Calden Server.vcxproj -> C:\Users\iD Student\Desktop\Luke L\Code\Calden\V_1\Calden Server\Debug\Calden Server.pdb (Full PDB)

@@ -1,0 +1,12 @@
+﻿  ServerManager.cpp
+c:\users\id student\desktop\luke l\code\calden\v_2\server\server\servermanager.cpp(100): warning C4101: 'message': unreferenced local variable
+c:\users\id student\desktop\luke l\code\calden\v_2\server\server\servermanager.cpp(180): warning C4996: 'asctime': This function or variable may be unsafe. Consider using asctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\time.h(116): note: see declaration of 'asctime'
+  Generating Code...
+  Compiling...
+  ServerDlg.cpp
+  Server.cpp
+  Generating Code...
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  Server.vcxproj -> C:\Users\iD Student\Desktop\Luke L\Code\Calden\V_2\Server\Debug\Server.exe
+  Server.vcxproj -> C:\Users\iD Student\Desktop\Luke L\Code\Calden\V_2\Server\Debug\Server.pdb (Full PDB)
