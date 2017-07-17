@@ -161,22 +161,22 @@ bool messageBot(std::string &message) {
 	std::cout << "messageBotFirst" << messageBotFirst << " : " << "messageBotSecound" << messageBotSecound << std::endl;
 	if (messageBotFirst == std::string("Sup Dude")) {
 		message = "/?Server Sup bro";
-		std::cout << "worked " << message;
 		return true;
 	}
 	else if(messageBotFirst == std::string("Saw Dude")) {
 		message = "/?Server Saw Dude";
-		std::cout << "worked " << message;
 		return true;
 	}
 	else if (messageBotSecound == std::string("Frosty")) {
 		message = "/?Server Don't break me plz";
-		std::cout << "worked " << message;
 		return true;
 	}
 	else if (messageBotSecound == std::string("Jet")) {
 		message = "/?Server Welcome Back";
-		std::cout << "worked " << message;
+		return true;
+	}
+	else if (messageBotFirst == std::string("I need Help")) {
+		message = "/?Server Im sorry please use the !help command";
 		return true;
 	}
 	else {

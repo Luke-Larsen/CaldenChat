@@ -5,32 +5,32 @@ bool Server::recvall(int ID, char * data, int totalbytes)
 	int bytesreceived = 0; //Holds the total bytes received
 	while (bytesreceived < totalbytes) //While we still have more bytes to recv
 	{
-		int RetnCheck = recv(Connections[ID], data, totalbytes - bytesreceived, NULL); //Try to recv remaining bytes
-		if (RetnCheck == SOCKET_ERROR) //If there is a socket error while trying to recv bytes
-			return false; //Return false - failed to recvall
-		bytesreceived += RetnCheck; //Add to total bytes received
+		int RetnCheck = recv(Connections[ID], data, totalbytes - bytesreceived, NULL); 
+		if (RetnCheck == SOCKET_ERROR) 
+			return false;
+		bytesreceived += RetnCheck; 
 	}
-	return true; //Success!
+	return true;
 }
 
 bool Server::sendall(int ID, char * data, int totalbytes)
 {
-	int bytessent = 0; //Holds the total bytes sent
-	while (bytessent < totalbytes) //While we still have more bytes to send
+	int bytessent = 0; 
+	while (bytessent < totalbytes) 
 	{
-		int RetnCheck = send(Connections[ID], data + bytessent, totalbytes - bytessent, NULL); //Try to send remaining bytes
-		if (RetnCheck == SOCKET_ERROR) //If there is a socket error while trying to send bytes
-			return false; //Return false - failed to sendall
-		bytessent += RetnCheck; //Add to total bytes sent
+		int RetnCheck = send(Connections[ID], data + bytessent, totalbytes - bytessent, NULL);
+		if (RetnCheck == SOCKET_ERROR) 
+			return false; 
+		bytessent += RetnCheck; 
 	}
-	return true; //Success!
+	return true; 
 }
 
 bool Server::SendInt(int ID, int _int)
 {
-	if (!sendall(ID, (char*)&_int, sizeof(int))) //Try to send int... If int fails to send
-		return false; //Return false: int not successfully sent
-	return true; //Return true: int successfully sent
+	if (!sendall(ID, (char*)&_int, sizeof(int))) 
+		return false; 
+	return true; 
 }
 
 bool Server::GetInt(int ID, int & _int)
